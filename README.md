@@ -25,8 +25,6 @@ Upon clicking 'Define' button after filling in desired term to define, user will
 
 User can organize definitions by either most 'thumbs up' or 'thumbs down' by clicking one of the two buttons at the top right of the display
 
-### : .
-
 ## Built With
 - Android Studio's XML editor - For UI/UX
 - RecyclerViews - Improved list display
