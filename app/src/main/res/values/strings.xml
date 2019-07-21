@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">UrbanDictionary</string>
+    <string name="edittext_hint">Enter a word to define</string>
+    <string name="search_button_text">Define</string>
+    <string name="order_by_text">Order By:</string>
+</resources>

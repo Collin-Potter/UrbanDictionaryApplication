@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_marginTop="8dp">
+        <TextView
+                android:text="word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/wordText" android:layout_weight="1"
+                android:layout_margin="8dp" android:textSize="24sp" android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"/>
+        <TextView
+                android:text="definition of word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/definitionText" android:layout_weight="1"
+                android:layout_margin="8dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_thumb_up_black_24dp"
+                android:id="@+id/imageView" android:layout_weight=".25"/>
+        <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/thumbs_up_count" android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:layout_marginBottom="8dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_thumb_down_black_24dp"
+                android:id="@+id/imageView2" android:layout_weight=".25"/>
+        <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/thumbs_down_count" android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
