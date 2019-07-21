@@ -18,7 +18,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Project Demo
 ### Search for term
 
-Upon clicking 'Define' button, user will see an indeterminate progress bar followed by a recycler view list of each definition related to the requested term on UrbanDictionary
+Upon clicking 'Define' button after filling in desired term to define, user will see an indeterminate progress bar followed by a recycler view list of each definition related to the requested term on UrbanDictionary
 
 ### Order the list
 
