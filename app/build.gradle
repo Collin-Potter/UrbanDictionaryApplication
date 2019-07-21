@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'org.jetbrains.dokka-android'
+
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.0"
@@ -23,6 +25,11 @@ android {
     }
 
     apply plugin: 'kotlin-kapt'
+
+    task dokkaHtml(type: dokka.class) {
+        outputFormat = 'javadoc'
+        outputDirectory = "$buildDir/javadoc"
+    }
 }
 
 dependencies {
@@ -34,7 +41,7 @@ dependencies {
     // JUnit 4 framework
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     testImplementation 'junit:junit:4.12'
-    testImplementation 'android.arch.core:core-testing:1.1.1'
+    testImplementation 'androidx.arch.core:core-testing:2.1.0-rc01'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 
@@ -46,8 +53,8 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:2.19.0'
     testImplementation 'org.hamcrest:hamcrest:2.1'
 
-    implementation "android.arch.lifecycle:extensions:1.1.1"
-    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0-rc01"
+    kapt "androidx.lifecycle:lifecycle-compiler:2.0.0-rc01"
 
     // Retrofit - REST querying
     implementation 'com.squareup.retrofit2:retrofit:2.6.0'
