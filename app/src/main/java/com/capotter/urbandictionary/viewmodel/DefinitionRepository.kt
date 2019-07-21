@@ -40,8 +40,8 @@ class DefinitionRepository {
                     if (mDefinitionWrapper != null && mDefinitionWrapper.list != null) {
                         definitions = mDefinitionWrapper.list as MutableList<Definition>
                         when(order){
-                            "thumbs_up" -> definitions.sortBy { it.thumbs_up }
-                            "thumbs_down" -> definitions.sortBy { it.thumbs_down }
+                            "thumbs_up" -> definitions.sortByDescending { it.thumbs_up }
+                            "thumbs_down" -> definitions.sortByDescending { it.thumbs_down }
                         }
                         mutableLiveData.value = definitions
                         setLoading(false)
