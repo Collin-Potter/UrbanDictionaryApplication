@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Click run with or without debug mode enabled
 
 ## Project Demo
-### [Javadocs](https://github.com/Collin-Potter/UrbanDictionaryApplication/blob/master/docs/javadoc/index.html)
+### [Javadocs](https://collin-potter.github.io/UrbanDictionaryApplication/)
 ### Search for term
 
 Upon clicking 'Define' button after filling in desired term to define, user will see an indeterminate progress bar followed by a recycler view list of each definition related to the requested term on UrbanDictionary
